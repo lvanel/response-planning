@@ -4,7 +4,7 @@ _Code related to a submission for COLING-LREC 2024_
 
 ---
 
-The architecture we propose in this paper is composed of two modules: the first step is to predict the sequence of labels \ref{fig:visub}, both the dialogue strategies and the emotion labels, that represents the behaviour expected by the agent in the next utterance. Then, this sequence is used to condition the selection of a final response from a set of generated candidate answers.
+The architecture we propose in this paper is composed of two modules: the first step is to predict the sequence of labels, both the dialogue strategies and the emotion labels, that represents the behaviour expected by the agent in the next utterance. Then, this sequence is used to condition the selection of a final response from a set of generated candidate answers.
 
 In order to asses the efficiency of the proposed architecture, we formalise the following hypothesis: _Planning a response using socio-emotional labels improves the quality of the generated answer._
 
