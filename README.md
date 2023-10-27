@@ -1,6 +1,8 @@
 # Transparency in Large Language Models: Planning Social and Emotional Responses Using Next Labels Sequence Prediction 
 
 _Code related to a submission for COLING-LREC 2024_
+
+
 _Disclaimer: The code was cleaned up and presented under the notebook format to be more legible: the conversion and the anonymisation might have created some inconsistencies with the save / loading / output paths. It is recommended to check everything when running the code._
 
 ---
