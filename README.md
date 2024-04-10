@@ -39,7 +39,7 @@ Once we've confirmed the quality of the predicted labels, we want to test our ma
 **STEP 2**: Filter & Rerank (_see folder: "Filter Rerank"_)
 * In this folder you should have the model Bert Current trained using the script labels/BERT_labels.ipynb -> task = current
 * A script to parse the outputs of Beluga response generation: parse_Beluga.ipynb
-* The script filter_rerank.ipynb takes care of loading the candidate responses generated previously, getting the set of "expected labels" (either from the dataset if CD1, or generating them using BART NO-CD if CD2). For each test sample, BERT Current is called to predict the sequence of labels present in each candidate. The sequences of labels of each candidate is matched with the expected sequence and ordered using Normalized Levenshtein Distance. The highest-ranking candidate is selected as the final response. Metrics are computed.
+* The script filter_rerank.ipynb takes care of loading the candidate responses generated previously, getting the set of "expected labels" (either from the dataset if CD-GT, or generating them using BART NO-CD if CD-pred). For each test sample, BERT Current is called to predict the sequence of labels present in each candidate. The sequences of labels of each candidate is matched with the expected sequence and ordered using Normalized Levenshtein Distance. The highest-ranking candidate is selected as the final response. Metrics are computed.
 
 
 ### Human Evaluation ###
@@ -50,9 +50,11 @@ The annotation process is divided into three steps, to reduce the workload for t
 (_see folder: "Human Evaluation"_)
 
 **STEP 1 & 2**: Step 1: Filtering by Relevance and Step 2: Selecting a Top-3 best responses (_see folder: "Filtering"_)
-* The code to run the evaluation platform (script: )
-* The annotated data (_see folder: "data"_)
+* The create_csv.py file gathers all responses from all models for the same context to create the full_responses_english.csv file, that will be used to prepare the evaluation batches for the annotators.
+* The code to run the evaluation platform (script: filter_eval.py )
+* The annotated data (_see subfolder: "data"_)
 
 **STEP 3**: Socio-Emotional Criteria Annotation (_see folder: "SocEmo Annotation"_)
-* The code to run the evaluation platform (script: )
-* The annotated data (_see folder: "data"_)
+* The responses that were selected as top-3 are compiled in the filtered_selected_responses_CLEAN_300.csv
+* The code to run the evaluation platform (script: annot_eval)
+* The annotated data (_see subfolder: "data"_)
