@@ -49,6 +49,8 @@ The annotation process is divided into three steps, to reduce the workload for t
 
 (_see folder: "Human Evaluation"_)
 
+The codes for the platforms are older versions that were provided to students for testing. The latest code will be uploaded as soon as possible.
+
 **STEP 1 & 2**: Step 1: Filtering by Relevance and Step 2: Selecting a Top-3 best responses (_see folder: "Filtering"_)
 * The create_csv.py file gathers all responses from all models for the same context to create the full_responses_english.csv file, that will be used to prepare the evaluation batches for the annotators.
 * The code to run the evaluation platform (script: filter_eval.py )
