@@ -1,6 +1,6 @@
 # Socio-Emotional Response Generation: A Human Evaluation Protocol for LLM-Based Conversational Systems 
 
-_Code related to a submission for COLM 2024_
+_Code related to a submission for AHRI (ACII 2024 Workshop)_
 
 
 _Disclaimer: The code was cleaned up and presented under the notebook format to be more legible: the conversion and the anonymisation might have created some inconsistencies with the save / loading / output paths. It is recommended to check everything when running the code._
