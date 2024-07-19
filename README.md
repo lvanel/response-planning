@@ -31,6 +31,8 @@ _> See folder "Labels Prediction"_
 ### Experiment: Conditional Response Generation ###
 Once we've confirmed the quality of the predicted labels, we want to test our main hypothesis: does planning the response by imposing a list of expected socio-emotional behaviours yield better result? We use generative models to compare responses generated without conditioning and those planned using socio-emotional labels. The conditioning method we choose is filter & reranking a set of candidate responses.
 
+The original Response Generation code was developed as part of an internship, Ariel's original work can be found here: https://github.com/arielramos97/Research_Project  
+
 **STEP 1**: Generate response (_see folder: "Response Generation"_) and outputs csv of the N candidate responses for each test sample.
 * BART (script: Bart_dialogue.ipynb)
 * GPT2 /DialoGPT: (script: GPT2_DialoGPT_dialogue.ipynb)
